@@ -1,10 +1,14 @@
 // Problem Statement: Given a natural number 'n', determine if the number is prime or not.
 // Big - O: O(n)
 const PrimeNumber = (n) => {
+  // if number is less than 2, then we will return false because the number less then 2 are not prime numbers
   if (n < 2) {
     return false;
   } else {
+    // the loop will start with 2 and keep repeating until i is less then the number
     for (let i = 2; i < n; i++) {
+      // if the division of number with i is equal to 0, it means it is not a prime number
+      // and returns false
       if (n % i === 0) {
         return false;
       }

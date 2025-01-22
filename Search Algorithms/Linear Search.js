@@ -2,7 +2,7 @@
 // Big - O: O(n)
 const findIndex = (arr, target) => {
   for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i]);
+    // search in the full array one by one, and the value of which index is equal to the target value, that index will be returned
     if (arr[i] === target) {
       return i;
     }

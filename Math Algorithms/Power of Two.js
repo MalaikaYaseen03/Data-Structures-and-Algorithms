@@ -5,10 +5,13 @@ const IsPowerofTwo = (n) => {
   if (n < 1) {
     return false;
   }
+  //  the loop will be repaeating till it becomes 1
   while (n > 1) {
+    // if the remainder of number is not equal to zero, return false(means it is not the power of 2)
     if (n % 2 !== 0) {
       return false;
     }
+    // but if it fails the condition, the number will be divided by 2 and becomes a new value of n
     n = n / 2;
   }
   return true;
