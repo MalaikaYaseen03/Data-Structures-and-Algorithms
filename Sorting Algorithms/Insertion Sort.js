@@ -1,13 +1,16 @@
+// Problem Statement: Given an array of integers, sort the array
+
 // Ascending Insertion Sort
+// Big - O: O(n^2)
 const AscinsertionSort = (arr) => {
   // loop to traverse over sorted array
   for (let i = 1; i < arr.length; i++) {
-    // form the value of index "1", the unsorted array starts
+    // from the value of index "1", the unsorted array starts
     const numbertoinsert = arr[i];
-    // the sorted array starts from i-1, means 0
+    // the sorted array starts from i-1, means value of index 0
     let j = i - 1;
     // loop to traverse over sorted array
-    // the loop will keep repeating until the index reaches to 0
+    // the loop will keep repeating until the index reaches to index 0
     // and value of j is greater than the selected number of the sorted array
     while (j >= 0 && arr[j] > numbertoinsert) {
       // if the selected number of unsorted array is less, than the place of selected number will be replaced by the current value of sorted array
